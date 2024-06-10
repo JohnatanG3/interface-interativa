@@ -1,0 +1,15 @@
+/* Aplica as regras a todos os elementos da página */
+* {
+    /* Remove todas as margens padrão de todos os elementos */
+    margin: 0;
+    /* Remove todos os preenchimentos (padding) padrão de todos os elementos */
+    padding: 0;
+    /* Altera o comportamento do box model para incluir padding e borda na largura e altura */
+    box-sizing: border-box;
+}
+
+/* Aplica as regras a todos os elementos <ul> (listas não ordenadas) */
+ul {
+    /* Remove os marcadores padrão (bolinhas) das listas não ordenadas */
+    list-style: none;
+}

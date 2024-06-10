@@ -1,0 +1,32 @@
+/* Define estilos para telas com largura máxima de 620px */
+@media(max-width: 620px) {
+    /* Estilos para o elemento com a classe "cabecalho" */
+    .cabecalho {
+        /* Reduz o preenchimento superior e inferior */
+        padding: 30px 0;
+    }
+
+    /* Estilos para o elemento com a classe "personagens-slider" */
+    .personagens-slider {
+        /* Adiciona preenchimento nas laterais */
+        padding: 0 15px;
+        /* Reduz o espaço entre os elementos filhos */
+        gap: 10px;
+    }
+
+    /* Estilos para os elementos com a classe "btn-seta" */
+    .btn-seta {
+        /* Reduz a largura */
+        width: 20px;
+        /* Reduz a altura */
+        height: 20px;
+        /* Adiciona preenchimento interno */
+        padding: 20px;
+    }
+
+    /* Estilos para o elemento com a classe "lista-personagens" */
+    .lista-personagens {
+        /* Reduz a altura */
+        height: 480px;
+    }
+}

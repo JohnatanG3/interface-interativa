@@ -1,0 +1,222 @@
+/* Define estilos para o elemento <body> */
+body {
+    /* Define a fonte para "Outfit", ou uma fonte sans-serif se "Outfit" não estiver disponível */
+    font-family: "Outfit", sans-serif;
+    /* Define uma imagem de fundo */
+    background-image: url("../img/fundo-base.jpg");
+    /* Impede a repetição da imagem de fundo */
+    background-repeat: no-repeat;
+    /* Ajusta a imagem de fundo para cobrir toda a área */
+    background-size: cover;
+    /* Define a altura mínima do corpo como 100% da altura da janela de visualização */
+    min-height: 100vh;
+}
+
+/* Define estilos para o elemento com a classe "cabecalho" */
+.cabecalho {
+    /* Centraliza o texto */
+    text-align: center;
+    /* Adiciona preenchimento superior e inferior */
+    padding: 60px 0;
+}
+
+/* Define estilos para o <h1> dentro do elemento com a classe "cabecalho" */
+.cabecalho h1 {
+    /* Define a cor do texto */
+    color: #f1ecff;
+    /* Define o tamanho da fonte */
+    font-size: 45px;
+    /* Adiciona espaçamento entre letras */
+    letter-spacing: 10px;
+    /* Transforma o texto para maiúsculas */
+    text-transform: uppercase;
+}
+
+/* Define estilos para o elemento com a classe "personagens-slider" */
+.personagens-slider {
+    /* Usa flexbox para alinhar elementos */
+    display: flex;
+    /* Centraliza os elementos filhos horizontalmente */
+    justify-content: center;
+    /* Centraliza os elementos filhos verticalmente */
+    align-items: center;
+    /* Adiciona espaço entre os elementos filhos */
+    gap: 80px;
+}
+
+/* Define estilos para o elemento com a classe "lista-personagens" */
+.lista-personagens {
+    /* Define a largura */
+    width: 330px;
+    /* Define a altura */
+    height: 520px;
+    /* Define o posicionamento relativo para permitir posicionamento absoluto de elementos filhos */
+    position: relative;
+}
+
+/* Define estilos para os elementos com a classe "btn-seta" */
+.btn-seta {
+    /* Define a cor de fundo */
+    background-color: #ffffff;
+    /* Define a largura */
+    width: 70px;
+    /* Define a altura */
+    height: 70px;
+    /* Define bordas arredondadas */
+    border-radius: 50px;
+    /* Remove a borda */
+    border: 0;
+    /* Define o cursor como ponteiro ao passar o mouse */
+    cursor: pointer;
+    /* Usa flexbox para alinhar elementos */
+    display: flex;
+    /* Centraliza os elementos filhos verticalmente */
+    align-items: center;
+    /* Centraliza os elementos filhos horizontalmente */
+    justify-content: center;
+    /* Adiciona uma transição suave para a mudança de cor de fundo */
+    transition: background-color 0.2s ease-in-out;
+    /* Adiciona uma sombra */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* Define estilos adicionais para os elementos com a classe "btn-seta" e "btn-voltar" */
+.btn-seta.btn-voltar {
+    /* Rotaciona o botão horizontalmente */
+    transform: rotateY(180deg);
+}
+
+/* Define estilos para o estado de hover dos elementos com a classe "btn-seta" */
+.btn-seta:hover {
+    /* Altera a cor de fundo ao passar o mouse */
+    background-color: #8351fe;
+}
+
+/* Define estilos para o estado de active dos elementos com a classe "btn-seta" */
+.btn-seta:active {
+    /* Altera a opacidade ao clicar no botão */
+    opacity: 0.7;
+}
+
+/* Define estilos para os elementos com a classe "cartao" */
+.cartao {
+    /* Define a opacidade inicial */
+    opacity: 0;
+    /* Define a altura como 100% do elemento pai */
+    height: 100%;
+    /* Define o posicionamento absoluto */
+    position: absolute;
+    /* Adiciona preenchimento interno */
+    padding: 12px;
+    /* Adiciona uma sombra */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* Define bordas arredondadas */
+    border-radius: 10px;
+    /* Adiciona uma transição suave para a mudança de opacidade */
+    transition: opacity 0.3s ease-in-out;
+    /* Usa flexbox para alinhar elementos */
+    display: flex;
+    /* Define a direção dos elementos filhos como coluna */
+    flex-direction: column;
+    /* Distribui os elementos filhos verticalmente */
+    justify-content: space-between;
+}
+
+/* Define estilos adicionais para os elementos com a classe "cartao" e "selecionado" */
+.cartao.selecionado {
+    /* Define a opacidade total */
+    opacity: 1;
+    /* Coloca o cartão selecionado na frente */
+    z-index: 1;
+}
+
+/* Define estilos para os elementos com a classe "imagem-personagem" dentro de "cartao" */
+.cartao .imagem-personagem {
+    /* Define a largura como 100% do elemento pai */
+    width: 100%;
+    /* Define a altura máxima */
+    max-height: 280px;
+}
+
+/* Define estilos para os elementos com a classe "nome" dentro de "cartao" */
+.cartao .nome {
+    /* Define a cor de fundo */
+    background-color: rgba(179, 177, 185, 0.7);
+    /* Adiciona preenchimento interno */
+    padding: 8px 10px;
+    /* Centralizar o texto */
+    text-align: center;
+    /* Define bordas arredondadas no topo */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /* Define a cor do texto */
+    color: #ffffff;
+    /* Define o tamanho da fonte */
+    font-size: 16px;
+    /* Transforma o texto para maiúsculas */
+    text-transform: uppercase;
+    /* Adiciona espaçamento entre letras */
+    letter-spacing: 5px;
+}
+
+/* Define estilos para os elementos com a classe "descricao" dentro de "cartao" */
+.cartao .descricao {
+    /* Define a cor de fundo */
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Define bordas arredondadas na parte inferior */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Define estilos para os elementos com a classe "titulo" dentro de "descricao" */
+.cartao .descricao .titulo {
+    /* Define a cor de fundo */
+    background-color: #333333;
+    /* Define o tamanho da fonte */
+    font-size: 20px;
+    /* Define a cor do texto */
+    color: #ffffff;
+    /* Adiciona preenchimento interno */
+    padding: 12px;
+    /* Centralizar o texto */
+    text-align: center;
+}
+
+/* Define estilos para os elementos com a classe "texto" dentro de "descricao" */
+.cartao .descricao .texto {
+    /* Define o tamanho da fonte */
+    font-size: 14px;
+    /* Adiciona preenchimento interno */
+    padding: 12px;
+    /* Define o alinhamento do texto */
+    text-align: justify;
+    /* Define a altura máxima */
+    max-height: 110px;
+    /* Adiciona uma barra de rolagem vertical se o conteúdo exceder a altura máxima */
+    overflow-y: auto;
+}
+
+/* Define estilos específicos para os cartões com diferentes classes de fundo */
+.cartao.fundo-1 {
+    background: url("../img/fundo-1.jpg") no-repeat;
+}
+
+.cartao.fundo-2 {
+    background: url("../img/fundo-2.jpg") no-repeat;
+}
+
+.cartao.fundo-3 {
+    background: url("../img/fundo-3.jpg") no-repeat;
+}
+
+.cartao.fundo-4 {
+    background: url("../img/fundo-4.jpg") no-repeat;
+}
+
+.cartao.fundo-5 {
+    background: url("../img/fundo-5.jpg") no-repeat;
+}
+
+.cartao.fundo-6 {
+    background: url("../img/fundo-6.jpg") no-repeat;
+}
