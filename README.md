@@ -70,7 +70,7 @@ Se você quiser contribuir com este projeto, siga estas etapas:
 
 ## Autor
 
-Desenvolvido por [JohnatanG3](https://github.com/SeuUsuario) durante o Projeto X-Devs - Semana do Zero ao Programador Contratado.
+Desenvolvido por [JohnatanG3](https://github.com/SeuUsuario).
 
 ## Contato
 
