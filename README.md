@@ -58,7 +58,7 @@ Controla a navegação entre os cartões de personagens:
 
 ## Contribuição
 
-# Como Contribuir
+### Como Contribuir
 
 Se você quiser contribuir com este projeto, siga estas etapas:
 
